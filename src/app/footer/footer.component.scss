@@ -1,0 +1,21 @@
+
+app-footer#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: auto;
+
+  padding: 16px;
+  background: #ffffff;
+  border-top: 1px solid #f1f1f1;
+
+  span.spacer {
+    flex: 1 1 auto;
+  }
+
+  app-logo {
+    display: flex;
+  }
+}

@@ -1,0 +1,30 @@
+
+mat-drawer-container {
+  display: flex;
+  
+  width: 100%;
+  height: calc(100vh - 64px);
+}
+
+mat-drawer-content {
+  display: flex !important;
+  flex-direction: column;
+}
+
+div.atipera-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+// Sidenav.
+mat-drawer {
+  width: 15rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+
+  [mat-button] {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

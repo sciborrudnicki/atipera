@@ -1,0 +1,46 @@
+app-progress-bar {
+  z-index: 2;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+
+  background: #ffffff;
+
+  transition: visibility 0s 1s, opacity 1s linear;
+
+  mat-progress-bar {
+    &.mat-mdc-progress-bar {
+      visibility: hidden;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+
+    mat-progress-bar {
+      &.mat-mdc-progress-bar {
+        visibility: visible;
+      }
+    }
+  }
+
+  div {
+    text-align: center;
+    width: 200px;
+  }
+  .mdc-linear-progress__bar-inner {
+    border-color: #0f5cbd !important; // #e91b72
+  }
+}
+

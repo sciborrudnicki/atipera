@@ -1,0 +1,43 @@
+
+mat-form-field {
+  display: flex;
+  width: 100%;
+
+  .mat-mdc-text-field-wrapper {
+    background-color: #faf9fd !important;
+  }
+  .mat-mdc-form-field-subscript-wrapper {
+    height: 0 !important;
+  }
+}
+
+
+
+table.mat-mdc-table {
+  width: 100vh;
+}
+
+.mat-column-position {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mat-column-name {
+  padding-left: 16px;
+  cursor: pointer;
+}
+
+.mat-column-weight {
+  width: 150px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.mat-column-symbol {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}

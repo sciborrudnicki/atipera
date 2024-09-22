@@ -1,0 +1,24 @@
+<div>
+  <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="" #input>
+  </mat-form-field>
+
+  @if (dataSource) {
+    <table mat-table [dataSource]="dataSource">
+      @for (item of tableService.columns; track item.name) {
+        <ng-container matColumnDef="{{item.name.toString()}}">
+          <th mat-header-cell *matHeaderCellDef> {{item.header}} </th>
+          <td mat-cell *matCellDef="let element; let i=index"(click)="tableService.openDialog(i + page, element.id, item.name)">
+            {{element[item.name]}}
+          </td>
+        </ng-container>
+      }
+  
+      <tr mat-header-row *matHeaderRowDef="tableService.displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: tableService.displayedColumns;"></tr>
+  
+    </table>
+    <mat-paginator [pageSizeOptions]="[10, 25, 100]" aria-label="Select page"></mat-paginator>      
+  }
+</div>

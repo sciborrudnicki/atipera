@@ -1,0 +1,13 @@
+<app-toolbar [drawer]="drawer"></app-toolbar>
+<mat-drawer-container class="atipera-container" autosize>
+  <mat-drawer #drawer class="atipera-sidenav" mode="over">
+    <a mat-button routerLink="/periodic" routerLinkActive="active">Periodic</a>
+    <a mat-button routerLink="/table" routerLinkActive="active">Table</a>
+  </mat-drawer>
+
+  <!-- Content -->
+  <div class="atipera-sidenav-content">
+    <router-outlet />
+  </div>
+  <app-footer id="footer"></app-footer>
+</mat-drawer-container>
