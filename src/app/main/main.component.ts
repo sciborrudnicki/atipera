@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { CommonModule } from '@angular/common';
+
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -14,7 +14,6 @@ import { LogoComponent } from '../logo/logo.component';
   selector: 'app-main',
   standalone: true,
   imports: [
-    CommonModule,
     FooterComponent,
     LogoComponent,
     MatButtonModule,
@@ -23,7 +22,7 @@ import { LogoComponent } from '../logo/logo.component';
     RouterLink,
     RouterLinkActive,
     RouterOutlet,
-    ToolbarComponent,
+    ToolbarComponent
 ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
