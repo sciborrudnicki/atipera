@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDialogActions, MatDialogContent } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogActions, MatDialogContent } from '@angular/material/dialog';
 
 // Service.
 import { TableService } from '../../table/table.service';
@@ -25,6 +25,7 @@ import { Observable, Subject } from 'rxjs';
     FormsModule,
     MatDialogActions,
     MatDialogContent,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
